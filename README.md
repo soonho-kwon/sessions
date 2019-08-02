@@ -1,5 +1,5 @@
 # Sessions
-Sessions is a tool that allows you to save and access your different digital workspaces.
+<a href = "https://twitter.com/soonhokwn/status/1153888171228184577?s=20">Sessions</a> is a tool that allows you to save and access your different digital workspaces.
 
 <h2>How it works</h2>
 Sessions saves all open apps and their relevant data (files, websites, window sizes, etc.) in a singular JSON file as a "session". It can update this file as you close and open other processes, and open other sessions entirely (via their files).
@@ -10,8 +10,17 @@ This is a good way to navigate the complexities of working on multiple projects 
 <h2>How to install</h2>
 The current Sessions prototype runs through AppleScript and Automator (for the time being).
 <h3>1. Download the Apple Scripts</h3>
-<h3>2. Create Quick Actions</h3>
-<h3>3. Access Your Sessions</h3>
+<h3>2. Download helper programs</h3>
+<ul>
+  <a href="https://imagemagick.org"><li>ImageMagick</li>
+  <a href="https://apps.apple.com/us/app/json-helper-for-applescript/id453114608?mt=12"><li>JSON Helper</li>
+    <a href="https://github.com/mklement0/fileicon"><li>fileicon</li>
+  
+</ul>
+
+<h3>3. Create Quick Actions</h3>
+<h3>4. Allowing Permissions</h3>
+<h3>5. Access Your Sessions</h3>
 <br>
 
 <h2>How to use</h2>
@@ -25,6 +34,9 @@ The current Sessions prototype runs through AppleScript and Automator (for the t
   <li>Daily digest with multiple websites</li>
 </ul>
 <br>
+
+<h2>Adding new apps</h2>
+There has to be some level of AppleScript support for new apps. I also have to add the file icon to the dictionary, so it knows which .icns file to pull data from. It's a whole thing that's a problem!!
 
 <h2>Future changes</h2>
 <ul>
