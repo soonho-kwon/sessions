@@ -1,5 +1,5 @@
 # Sessions
-Sessions is a tool that allows you to save and access your different digital workspaces.
+<a href = "https://twitter.com/soonhokwn/status/1153888171228184577?s=20">Sessions</a> is a tool that allows you to save and access your different digital workspaces.
 
 <h2>How it works</h2>
 Sessions saves all open apps and their relevant data (files, websites, window sizes, etc.) in a singular JSON file as a "session". It can update this file as you close and open other processes, and open other sessions entirely (via their files).
