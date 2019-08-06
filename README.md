@@ -7,25 +7,27 @@
 
 <h2>How it works</h2>
 Sessions saves all open apps and their relevant data (files, websites, window sizes, etc.) in a singular JSON file as a "session". It can update this file as you close and open other processes, and open other sessions entirely (via their files).
-<br>[add photo here]<br>
+<br><img src="https://github.com/soonho-kwon/sessions/blob/master/img/JSON_example.png" align="center" width="650"><br>
 
 <h2>How to install</h2>
 The current Sessions prototype runs through AppleScript and Automator (for the time being). This is mainly because of the new Mojave sandbox problems, as there aren't many easy ways to manipulate other apps from within an app.
 <h3>1. Download the Apple Scripts</h3>
 There are six scripts you will find in this repo:
-
-* Create_Session Script
-* Save_Session Script
-* Open_Session Script
-* Close_Session Script
-* Initializater Script
-* Sessions_App Script
-
+<br>
+<ul>
+  <li>Create_Session Script</li>
+  <li>Save_Session Script</li>
+  <li>Open_Session Script</li>
+  <li>Close_Session Script</li>
+  <li>Sessions_App Script</li>
+  <li>Initializater Script</li>
+</ul>
 <br>
 Open the Initializer Script first, and press run. This will create all the necessary folders and files needed to manage your sessions.
 
 <h3>2. Download helper programs</h3>
 This application relies on helper programs for several small things. Please download them!
+<br>
 <ul>
   <a href="https://imagemagick.org"><li>ImageMagick</li>
   <a href="https://apps.apple.com/us/app/json-helper-for-applescript/id453114608?mt=12"><li>JSON Helper</li>
