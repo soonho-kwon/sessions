@@ -1,26 +1,43 @@
 # Sessions
-<a href = "https://twitter.com/soonhokwn/status/1153888171228184577?s=20">Sessions</a> is a tool that allows you to save and access your different digital workspaces.
+<a href = "https://twitter.com/soonhokwn/status/1153888171228184577?s=20">Sessions</a> is a tool that allows you to save and access your different digital workspaces. It saves the collection of apps, documents, and websites on your computer and allows you to reopen that collection anytime you want. This allows you to:
+
+* Have less computational overhead by closing unnecessary processes
+* Reduce distractions by closing (but not forgetting) the digital remnants of other tasks
+* Overall have a more organized headspace for your different computational needs
 
 <h2>How it works</h2>
 Sessions saves all open apps and their relevant data (files, websites, window sizes, etc.) in a singular JSON file as a "session". It can update this file as you close and open other processes, and open other sessions entirely (via their files).
-<br>
-This is a good way to navigate the complexities of working on multiple projects at once. 
-<br>
+<br>[add photo here]<br>
 
 <h2>How to install</h2>
-The current Sessions prototype runs through AppleScript and Automator (for the time being).
+The current Sessions prototype runs through AppleScript and Automator (for the time being). This is mainly because of the new Mojave sandbox problems, as there aren't many easy ways to manipulate other apps from within an app.
 <h3>1. Download the Apple Scripts</h3>
+There are six scripts you will find in this repo:
+
+* Create_Session Script
+* Save_Session Script
+* Open_Session Script
+* Close_Session Script
+* Initializater Script
+* Sessions_App Script
+
+<br>
+Open the Initializer Script first, and press run. This will create all the necessary folders and files needed to manage your sessions.
+
 <h3>2. Download helper programs</h3>
+This application relies on helper programs for several small things. Please download them!
 <ul>
   <a href="https://imagemagick.org"><li>ImageMagick</li>
   <a href="https://apps.apple.com/us/app/json-helper-for-applescript/id453114608?mt=12"><li>JSON Helper</li>
-    <a href="https://github.com/mklement0/fileicon"><li>fileicon</li>
-  
+  <a href="https://github.com/mklement0/fileicon"><li>fileicon</li>  
 </ul>
 
 <h3>3. Create Quick Actions</h3>
+
 <h3>4. Allowing Permissions</h3>
+When you first run the scripts using your Quick Actions / Automator, your computer may ask you for accessibility and UI permissions. Make sure to add those permissions in.
 <h3>5. Access Your Sessions</h3>
+Your sessions can be found at `user/Library/Sessions/Sessions`. You can duplicate, modify, and delete them there. In case you lose something, backups can be found at `user/Library/Sessions/Sessions_Backups`.
 <br>
 
 <h2>How to use</h2>
@@ -30,9 +47,7 @@ The current Sessions prototype runs through AppleScript and Automator (for the t
 <br>
 
 <h2>Suggested Sessions</h2>
-<ul>
-  <li>Daily digest with multiple websites</li>
-</ul>
+You can find some suggested usages for sessions in the Examples folder.
 <br>
 
 <h2>Adding new apps</h2>
@@ -41,6 +56,7 @@ There has to be some level of AppleScript support for new apps. I also have to a
 <h2>Future changes</h2>
 <ul>
   <li>A functional Menu Bar App</li>
+  <li>Whitelisted Apps</li>
   <li>Additional third-party app compatibility</li>
   <li>Support for multiple desktop spaces</li>
   <li>Options for timing</li>
